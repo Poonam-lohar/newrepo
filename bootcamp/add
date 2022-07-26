@@ -1,0 +1,4 @@
+x=$((RANDOM))
+y=$((random))
+echo $(($x+$y))
+

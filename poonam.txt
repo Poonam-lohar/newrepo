@@ -1,0 +1,10 @@
+1. pwd = present working directory
+2. touch = create new file
+        touch demo.txt
+3. ls = list of files
+4. mkdir = make directory
+       mkdir friday
+5. cd = change directory
+        cd friday/
+6. cd .. = previous directory
+           (..)-previous directory

@@ -1,0 +1,73 @@
+QUE 1) PRINT RANDOM NUMBER
+
+X=$((RANDOM))
+echo $X
+
+OUTPUT:
+
+Suraj@sURAJ MINGW64 ~/Documents/bootcamp
+$ bash random.sh
+338
+
+
+QUE 2) Random number from dice 1 to 6
+
+X=$(((RANDOM%6)+1))
+echo $X
+
+OUTPUT
+Suraj@sURAJ MINGW64 ~/Documents/bootcamp
+$ bash random.sh
+3
+
+Suraj@sURAJ MINGW64 ~/Documents/bootcamp
+$ bash random.sh
+1
+
+Suraj@sURAJ MINGW64 ~/Documents/bootcamp
+$ bash random.sh
+5
+
+QUE 3)
+
+x=$((RANDOM%5+1))
+y=$((RANDOM%5+1))
+echo $(($x+$y))
+
+OUTPUT:
+
+Suraj@HP MINGW64 ~/Documents/bootcamp
+$ nano random1.sh
+
+Suraj@HP MINGW64 ~/Documents/bootcamp
+$ bash random1.sh
+4
+
+Suraj@HP MINGW64 ~/Documents/bootcamp
+$ bash random1.sh
+9
+
+Suraj@HP MINGW64 ~/Documents/bootcamp
+$ bash random1.sh
+10
+
+
+QUE 4)
+
+num1=$(( ($RANDOM%6 ) +1));
+num2=$(( ($RANDOM%6 ) +1));
+num3=$(( ($RANDOM%6 ) +1));
+num4=$(( ($RANDOM%6 ) +1));
+num5=$(( ($RANDOM%6 ) +1));
+sum=$(( num1+num2+num3+num4+num5 ))
+average=$(( sum/2 ))
+echo "sum is: " $sum
+echo "average is: " $average
+
+OUTPUT:
+
+
+Suraj@HP MINGW64 ~/Documents/bootcamp
+$ bash random4.sh
+sum is:  21
+average is:  10

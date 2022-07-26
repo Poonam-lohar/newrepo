@@ -1,0 +1,35 @@
+for files in *.txt
+do
+      folderName=`echo $files | awk -F. '{print $1}'`;
+      echo $files;
+      echo $folderName;
+      printf "\n";
+      if [ -d $folderName ]
+      then
+          rm -r $folderName;
+      fi
+      mkdir $folderName;
+      cp $files $folderName/$files;
+done
+
+
+
+### Output:
+Suraj@sURAJ MINGW64 ~/Documents/sp
+$ ls
+abc/  abc.java  abc.txt  copyfile.sh  def/  def.java  def.txt
+
+Suraj@sURAJ MINGW64 ~/Documents/sp
+$ nano copyfile.sh
+
+Suraj@sURAJ MINGW64 ~/Documents/sp
+$ bash copyfile.sh
+abc.txt
+abc
+
+def.txt
+def
+
+
+Suraj@sURAJ MINGW64 ~/Documents/sp
+$
